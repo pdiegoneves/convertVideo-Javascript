@@ -1,6 +1,7 @@
 const fs = require('fs')
 const shell = require('shelljs')
-const pastas = ['/home/diego/Vídeos/MESTRES DO CAPITALISMO/O Jeito Clube do Valor de Investir Dinheiro'
+const pastas = [
+	
 ] || __dirname
 let pastaIndice = 0
 const executavel = 'handbrake-jz.cli'
