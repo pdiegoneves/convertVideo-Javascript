@@ -2,13 +2,14 @@ const shell = require('shelljs')
 const arq = require('./arquivos')
 const os = require('os')
 const pastas = [
-'/home/diego/Videos/01 - Introdução e Instalação/'
+'/home/diego/Videos/01 - Introdução e Instalação'
 ] || __dirname
 let pastaIndice = 0
+let executavel = ''
 if(os.type() === 'Linux') {
-	const executavel = 'handbrake-jz.cli'
+	executavel = 'handbrake-jz.cli'
 } else {
-	const executavel = 'HandBrakeCLI.exe'
+	executavel = 'HandBrakeCLI.exe'
 }
 
 const parametros = '-e x264 -T'
