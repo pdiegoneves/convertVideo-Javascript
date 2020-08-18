@@ -4,7 +4,7 @@ const os = require("os");
 
 const parametros = "-e x264 -T";
 
-const pastas = ["D:/teste"] || __dirname;
+const pastas = ["D:/test"] || __dirname;
 
 let pastaIndice = 0;
 let executavel = "";
