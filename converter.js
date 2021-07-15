@@ -1,9 +1,7 @@
 const shell = require('shelljs')
 const arq = require('./arquivos')
 const os = require('os')
-const pastas = [
-'/home/diego/Videos/01 - Introdução e Instalação'
-] || __dirname
+const pastas = require('./pastas')
 let pastaIndice = 0
 let executavel = ''
 if(os.type() === 'Linux') {
@@ -12,7 +10,7 @@ if(os.type() === 'Linux') {
 	executavel = 'HandBrakeCLI.exe'
 }
 
-const parametros = '-e x264 -T'
+const parametros = '-e x264 -T -X 1280'
 
 const converterTodosArquivos = listaArquivos => {
     for ( arquivo of listaArquivos ) {
